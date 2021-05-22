@@ -16,18 +16,18 @@ session_start();
                       $row = mysqli_fetch_array($result);
 
                       $_SESSION["userid"] = $row["u_id"];
-                      $_SESSION["user"] = $row["Firstname"]." ".$row["Lastname"];
-                      $_SESSION["Userlevel"] = $row["Userlevel"];
+                      $_SESSION["username"] = $row["u_fname"]." ".$row["u_lname"];
+                      $_SESSION["userlevel"] = $row["u_level"];
 
-                      if($_SESSION["Userlevel"]=="admin"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
+                      if($_SESSION["userlevel"]=="admin"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
 
-                        Header("Location: index_admin.php");
+                        Header("Location: ../Back End/index_admin.php");
 
                       }
 
                       if ($_SESSION["Userlevel"]=="member"){  //ถ้าเป็น member ให้กระโดดไปหน้า user_page.php
 
-                        Header("Location: user_page.php");
+                        Header("Location: ../Front End/member_index.php");
 
                       }
 
