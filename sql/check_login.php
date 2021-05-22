@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check login</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+</head>
+<body>
 <?php 
 session_start();
         if(isset($_POST['u_username'])){
@@ -33,10 +43,18 @@ session_start();
                       }
 
                   }else{
-                    echo "<script>";
-                        echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
-                        echo "window.history.back()";
-                    echo "</script>";
+                    echo "<script language='JavaScript'>
+                    sweetAlert('Warning!', 'Password และยืนยัน Password ต้องตรงกัน', 'warning');
+                    window.location.href = 'index.php'; 
+                    </script>";
+                    //echo "<script> swal('Oops...', 'Something went wrong :(', 'error');
+                    //location.href='../Login/login.php';
+                    //</script>";
+
+                    //echo "<script>";
+                       // echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
+                       //echo "window.history.back()";
+                    //echo "</script>";
                   }
 
         }else{
@@ -46,3 +64,8 @@ session_start();
 
         }
 ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+</body>
+</html>
+
+
