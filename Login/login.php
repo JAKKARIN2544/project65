@@ -1,4 +1,5 @@
-<?php include "../include/header_login.html"; ?> 
+<?php include "../include/header_login.html"; 
+?> 
 
 <body class="login-page">
 	<div class="login-header box-shadow">
@@ -63,11 +64,11 @@
 											use code for form submit
 											<input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In">
 										-->
-										<a class="btn btn-primary btn-lg btn-block" href="index.html">Sign In</a>
+										<a class="btn btn-primary btn-lg btn-block" >Sign In</a>
 									</div>
 									<div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
 									<div class="input-group mb-0">
-										<a class="btn btn-outline-primary btn-lg btn-block" href="register.html">Register To Create Account</a>
+										<a class="btn btn-outline-primary btn-lg btn-block" href="register.php">Register To Create Account</a>
 									</div>
 								</div>
 							</div>

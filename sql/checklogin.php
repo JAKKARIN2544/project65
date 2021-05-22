@@ -2,7 +2,7 @@
 session_start();
         if(isset($_POST['username'])){
 				//connection
-                  include("conn.php");
+                  include("../sql/conn.php");
 				//รับค่า user & password
                   $username = $_POST['username'];
                   $password = md5($_POST['password']);
