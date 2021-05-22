@@ -47,7 +47,7 @@
 									</div>
 								</div>
 								<div class="col-6">
-									<div class="forgot-password"><a href="forgot-password.html">Forgot Password</a></div>
+									<div class="forgot-password"><a href="../Error file/404.html">Forgot Password</a></div>
 								</div>
 							</div>
 							<div class="row">
