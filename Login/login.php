@@ -29,7 +29,7 @@
 						</div>
 						<form action="../sql/checklogin.php" method="post"  name="loginform" onsubmit="return validateForm()">
 							<div class="input-group custom">
-								<input type="text" class="form-control form-control-lg" placeholder="Username" name="username">
+								<input type="text" class="form-control form-control-lg" placeholder="Username" name="u_username" id="u_username">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
 								</div>
@@ -38,7 +38,7 @@
 							<div id="username" class="text-danger"></div>
 							<!--alet form end -->
 							<div class="input-group custom">
-								<input type="password" class="form-control form-control-lg" placeholder="**********" name="password">
+								<input type="password" class="form-control form-control-lg" placeholder="**********" name="u_password" id="u_password">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="dw dw-padlock1"></i></span>
 								</div>

@@ -1,3 +1,6 @@
+<?php session_start(); ?>
+
+
 <body>
 <div class="header">
 		<div class="header-left">
@@ -72,13 +75,13 @@
 						<span class="user-icon">
 							<img src="../vendors/images/photo1.jpg" alt="">
 						</span>
-						<span class="user-name">Ross C. Lopez</span>
+						<span class="user-name"><?php echo  $_SESSION['user_fname']; ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
 						<a class="dropdown-item" href="profile.php"><i class="dw dw-user1"></i> Profile</a>
 						<a class="dropdown-item" href="set_profile.php"><i class="dw dw-settings2"></i> Setting</a>
 						<a class="dropdown-item" href="help.html"><i class="dw dw-help"></i> Help</a>
-						<a class="dropdown-item" href="logout.php"><i class="dw dw-logout"></i> Log Out</a>
+						<a class="dropdown-item" href="../sql/logout.php"><i class="dw dw-logout"></i> Log Out</a>
 					</div>
 				</div>
 			</div>
@@ -162,7 +165,7 @@
 
 	<div class="left-side-bar">
 		<div class="brand-logo">
-			<a href="index.php">
+			<a href="../Back End/index_admin.php">
 				<img src="../vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
 				<img src="../vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
 			</a>
@@ -175,7 +178,7 @@
 				<ul id="accordion-menu">
 
 				<li>
-						<a href="../Back End/index.php" class="dropdown-toggle no-arrow">
+						<a href="../Back End/index_admin.php" class="dropdown-toggle no-arrow">
 							<span class="micon dw dw-home"></span><span class="mtext">Dashboard</span>
 						</a>
 					</li>

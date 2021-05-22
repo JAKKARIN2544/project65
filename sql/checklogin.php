@@ -1,13 +1,13 @@
 <?php 
 session_start();
-        if(isset($_POST['username'])){
+        if(isset($_POST['u_username'])){
 				//connection
                   include("../sql/conn.php");
 				//รับค่า user & password
-                  $username = $_POST['username'];
-                  $password = md5($_POST['password']);
+                  $username = $_POST['u_username'];
+                  $password = $_POST['u_password'];
 				//query 
-                  $sql="SELECT * FROM user Where u_name ='".$username."' and u_password ='".$password."' ";
+                  $sql="SELECT * FROM user Where u_username ='".$username."' and u_password ='".$password."' ";
 
                   $result = mysqli_query($conn,$sql);
 				
@@ -15,19 +15,18 @@ session_start();
 
                       $row = mysqli_fetch_array($result);
 
-                      $_SESSION["userid"] = $row["u_id"];
-                      $_SESSION["username"] = $row["u_username"];
-                      $_SESSION["userfname"] = $row["u_fname"];
-                      $_SESSION["userlname"] = $row["u_lname"];
-                      $_SESSION["userlevel"] = $row["u_level"];
+                      $_SESSION["u_id"] = $row["u_id"];
+                      $_SESSION["u_username"] = $row["u_username"];
+                      $_SESSION["user"] = $row["u_fname"]." ".$row["u_lname"];
+                      $_SESSION["u_level"] = $row["u_level"];
 
-                      if($_SESSION["userlevel"]=="admin"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
+                      if($_SESSION["u_level"]=="admin"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
 
                         Header("Location: ../Back End/index_admin.php");
 
                       }
 
-                      if ($_SESSION["userlevel"]=="member"){  //ถ้าเป็น member ให้กระโดดไปหน้า user_page.php
+                      if ($_SESSION["u_level"]=="member"){  //ถ้าเป็น member ให้กระโดดไปหน้า user_page.php
 
                         Header("Location: ../Front End/member_index.php");
 
@@ -35,16 +34,15 @@ session_start();
 
                   }else{
                     echo "<script>";
-                        echo "alert(\" user or  password Not correct\");"; 
+                        echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
                         echo "window.history.back()";
                     echo "</script>";
-
                   }
 
         }else{
 
 
-             Header("Location: login.php"); //user & password incorrect back to login again
+             Header("Location: ../Login/login.php"); //user & password incorrect back to login again
 
         }
 ?>
