@@ -26,19 +26,25 @@
 						<div class="login-title">
 							<h2 class="text-center text-primary">Login To DeskApp</h2>
 						</div>
-						<form>
+						<form action="../sql/checklogin.php" method="post"  name="loginform" onsubmit="return validateForm()">
 							<div class="input-group custom">
-								<input type="text" class="form-control form-control-lg" placeholder="Username">
+								<input type="text" class="form-control form-control-lg" placeholder="Username" name="username">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
 								</div>
 							</div>
+							<!--alet form start-->
+							<div id="username" class="text-danger"></div>
+							<!--alet form end -->
 							<div class="input-group custom">
-								<input type="password" class="form-control form-control-lg" placeholder="**********">
+								<input type="password" class="form-control form-control-lg" placeholder="**********" name="password">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="dw dw-padlock1"></i></span>
 								</div>
 							</div>
+							<!--alet form start-->
+							<div id="password" class="text-danger"></div>
+							<!--alet form end -->
 							<div class="row pb-30">
 								<div class="col-6">
 									<div class="custom-control custom-checkbox">
@@ -71,5 +77,28 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		function validateForm() {
+    // alert ("form call js");
+    var x = document.forms["loginform"]["username"].value;
+    var y = document.forms["loginform"]["password"].value;
+    if (x == "") {
+        document.getElementById("username").innerHTML = "<b> Please Your Enter username ";
+        document.forms["loginform"]["username"].value = "";
+        document.forms["loginform"]["username"].focus();
+        return false;
+    } else {
+        document.getElementById("usenamer").innerHTML = "";
+    }
+    if (y == "") {
+        document.getElementById("password").innerHTML = "<b> Please Your Enter password ";
+        document.forms["loginform"]["password"].value = "";
+        document.forms["loginform"]["password"].focus();
+        return false;
+    } else {
+        document.getElementById("pass").innerHTML = "";
+    }
 
+}
+	</script>
 <?php include "../include/footer_login.html"; ?> 
