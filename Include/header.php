@@ -1,3 +1,8 @@
+<?php 
+	include "../sql/check_session.php";
+	
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
