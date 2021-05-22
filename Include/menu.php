@@ -78,7 +78,7 @@
 						<span class="user-icon">
 							<img src="../vendors/images/photo1.jpg" alt="">
 						</span>
-						<span class="user-name"><?php echo  $_SESSION['u_lname']; ?></span>
+						<span class="user-name"><?php echo  $_SESSION['user']; ?></span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
 						<a class="dropdown-item" href="profile.php"><i class="dw dw-user1"></i> Profile</a>
