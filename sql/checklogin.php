@@ -7,17 +7,18 @@ session_start();
                   $username = $_POST['username'];
                   $password = md5($_POST['password']);
 				//query 
-                  $sql="SELECT * FROM user Where username='".$username."' and password='".$password."' ";
+                  $sql="SELECT * FROM user Where u_name ='".$username."' and u_password ='".$password."' ";
 
-                  $result = mysqli_query($con,$sql);
+                  $result = mysqli_query($conn,$sql);
 				
                   if(mysqli_num_rows($result)==1){
 
                       $row = mysqli_fetch_array($result);
 
                       $_SESSION["userid"] = $row["u_id"];
-                      $_SESSION["u_name"] = $row["u_username"];
-                      $_SESSION["username"] = $row["u_fname"]." ".$row["u_lname"];
+                      $_SESSION["username"] = $row["u_username"];
+                      $_SESSION["userfname"] = $row["u_fname"];
+                      $_SESSION["userlname"] = $row["u_lname"];
                       $_SESSION["userlevel"] = $row["u_level"];
 
                       if($_SESSION["userlevel"]=="admin"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
