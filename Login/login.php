@@ -35,7 +35,7 @@
 								</div>
 							</div>
 							<!--alet form start-->
-							<div id="username" class="text-danger"></div>
+							<div id="u_username" class="text-danger"></div>
 							<!--alet form end -->
 							<div class="input-group custom">
 								<input type="password" class="form-control form-control-lg" placeholder="**********" name="u_password" id="u_password">
@@ -44,7 +44,7 @@
 								</div>
 							</div>
 							<!--alet form start-->
-							<div id="password" class="text-danger"></div>
+							<div id="u_password" class="text-danger"></div>
 							<!--alet form end -->
 							<div class="row pb-30">
 								<div class="col-6">
@@ -77,23 +77,23 @@
 	<script>
 		function validateForm() {
     // alert ("form call js");
-    var x = document.forms["loginform"]["username"].value;
-    var y = document.forms["loginform"]["password"].value;
+    var x = document.forms["loginform"]["u_username"].value;
+    var y = document.forms["loginform"]["u_password"].value;
     if (x == "") {
-        document.getElementById("username").innerHTML = "<b> Please Your Enter username ";
-        document.forms["loginform"]["username"].value = "";
-        document.forms["loginform"]["username"].focus();
+        document.getElementById("u_username").innerHTML = "<b> Please Your Enter username ";
+        document.forms["loginform"]["u_username"].value = "";
+        document.forms["loginform"]["u_username"].focus();
         return false;
     } else {
-        document.getElementById("usenamer").innerHTML = "";
+        document.getElementById("u_usenamer").innerHTML = "";
     }
     if (y == "") {
-        document.getElementById("password").innerHTML = "<b> Please Your Enter password ";
-        document.forms["loginform"]["password"].value = "";
-        document.forms["loginform"]["password"].focus();
+        document.getElementById("u_password").innerHTML = "<b> Please Your Enter password ";
+        document.forms["loginform"]["u_password"].value = "";
+        document.forms["loginform"]["u_password"].focus();
         return false;
     } else {
-        document.getElementById("pass").innerHTML = "";
+        document.getElementById("u_password").innerHTML = "";
     }
 
 }
