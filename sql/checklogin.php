@@ -33,7 +33,7 @@ session_start();
 
                   }else{
                     echo "<script>";
-                        echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
+                        echo "alert(\" user or  password Not correct\");"; 
                         echo "window.history.back()";
                     echo "</script>";
 
@@ -42,7 +42,7 @@ session_start();
         }else{
 
 
-             Header("Location: form.php"); //user & password incorrect back to login again
+             Header("Location: login.php"); //user & password incorrect back to login again
 
         }
 ?>
