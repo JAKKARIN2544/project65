@@ -1,6 +1,9 @@
-<?php session_start(); ?>
-
-
+<?php 
+	include "../sql/conn.php";
+	include "../sql/check_session.php";
+	session_start(); 
+	
+?>
 <body>
 <div class="header">
 		<div class="header-left">

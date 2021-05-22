@@ -27,7 +27,7 @@
 						<div class="login-title">
 							<h2 class="text-center text-primary">Login To DeskApp</h2>
 						</div>
-						<form action="../sql/checklogin.php" method="post"  name="loginform" onsubmit="return validateForm()">
+						<form action="../sql/check_login.php" method="post"  name="loginform" onsubmit="return validateForm()">
 							<div class="input-group custom">
 								<input type="text" class="form-control form-control-lg" placeholder="Username" name="u_username" id="u_username">
 								<div class="input-group-append custom">
