@@ -16,6 +16,7 @@ session_start();
                       $row = mysqli_fetch_array($result);
 
                       $_SESSION["userid"] = $row["u_id"];
+                      $_SESSION["u_name"] = $row["u_username"];
                       $_SESSION["username"] = $row["u_fname"]." ".$row["u_lname"];
                       $_SESSION["userlevel"] = $row["u_level"];
 
@@ -25,7 +26,7 @@ session_start();
 
                       }
 
-                      if ($_SESSION["Userlevel"]=="member"){  //ถ้าเป็น member ให้กระโดดไปหน้า user_page.php
+                      if ($_SESSION["userlevel"]=="member"){  //ถ้าเป็น member ให้กระโดดไปหน้า user_page.php
 
                         Header("Location: ../Front End/member_index.php");
 
