@@ -1,6 +1,7 @@
+	<!-- add sweet alert js & css in footer -->
+	<script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
+	<script src="src/plugins/sweetalert2/sweet-alert.init.js"></script>
 <?php 
-  include "../Include/script_header.php";
-
 session_start();
         if(isset($_POST['u_username'])){
 				//connection
@@ -35,9 +36,9 @@ session_start();
                       }
 
                   }else{
-                    echo '<script>swal("adada","adad","error")</script>';
+                    
                     //echo "<script>";
-                        //echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
+                      //echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
                        //echo "window.history.back()";
                     //echo "</script>";
                   }
@@ -49,5 +50,5 @@ session_start();
 
         }
 
-  include "../Include/script_footer.php";    
+  
 ?>
