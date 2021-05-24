@@ -1,4 +1,6 @@
 <?php 
+  include "../Include/script_header.php";
+
 session_start();
         if(isset($_POST['u_username'])){
 				//connection
@@ -33,18 +35,11 @@ session_start();
                       }
 
                   }else{
-                    //echo "<script language='JavaScript'>
-                    //sweetAlert('Warning!', 'Password และยืนยัน Password ต้องตรงกัน', 'warning');
-                    //window.location.href = 'index.php'; 
-                    //</script>";
-                    //echo "<script> swal('Oops...', 'Something went wrong :(', 'error');
-                    //location.href='../Login/login.php';
-                    //</script>";
-
-                    echo "<script>";
-                        echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
-                       echo "window.history.back()";
-                    echo "</script>";
+                    echo '<script>swal("adada","adad","error")</script>';
+                    //echo "<script>";
+                        //echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
+                       //echo "window.history.back()";
+                    //echo "</script>";
                   }
 
         }else{
@@ -53,4 +48,6 @@ session_start();
              Header("Location: ../Login/login.php"); //user & password incorrect back to login again
 
         }
+
+  include "../Include/script_footer.php";    
 ?>
