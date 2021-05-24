@@ -35,7 +35,7 @@
 								</div>
 							</div>
 							<!--alet form start-->
-							<div id="username" class="text-danger"></div>
+							<div id="u_username" class="text-danger"></div>
 							<!--alet form end -->
 							<div class="input-group custom">
 								<input type="password" class="form-control form-control-lg" placeholder="**********" name="u_password" id="u_password">
@@ -44,7 +44,7 @@
 								</div>
 							</div>
 							<!--alet form start-->
-							<div id="password" class="text-danger"></div>
+							<div id="u_password" class="text-danger"></div>
 							<!--alet form end -->
 							<div class="row pb-30">
 								<div class="col-6">
@@ -60,7 +60,7 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="input-group mb-0">
-										<button class="btn btn-primary btn-lg btn-block" type="submit" >Sign In</button>
+										<button class="btn btn-primary btn-lg btn-block"  >Sign In</button>
 									</div>
 									<div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
 									<div class="input-group mb-0">
@@ -80,20 +80,20 @@
     var x = document.forms["loginform"]["u_username"].value;
     var y = document.forms["loginform"]["u_password"].value;
     if (x == "") {
-        document.getElementById("username").innerHTML = "<b> Please Your Enter username ";
-        document.forms["loginform"]["username"].value = "";
-        document.forms["loginform"]["username"].focus();
+        document.getElementById("u_username").innerHTML = "<b> Please Your Enter username ";
+        document.forms["loginform"]["u_username"].value = "";
+        document.forms["loginform"]["u_username"].focus();
         return false;
     } else {
-        document.getElementById("usenamer").innerHTML = "";
+        document.getElementById("u_username").innerHTML = "";
     }
     if (y == "") {
-        document.getElementById("password").innerHTML = "<b> Please Your Enter password ";
-        document.forms["loginform"]["password"].value = "";
-        document.forms["loginform"]["password"].focus();
+        document.getElementById("u_password").innerHTML = "<b> Please Your Enter password ";
+        document.forms["loginform"]["u_password"].value = "";
+        document.forms["loginform"]["u_password"].focus();
         return false;
     } else {
-        document.getElementById("pass").innerHTML = "";
+        document.getElementById("u_password").innerHTML = "";
     }
 
 }
