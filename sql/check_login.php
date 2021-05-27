@@ -44,29 +44,29 @@ session_start();
                       $_SESSION["user"] = $row["u_fname"]." ".$row["u_lname"];
                       $_SESSION["u_level"] = $row["u_level"];
 
-                      if($_SESSION["u_level"]=="admin"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
+                      if($_SESSION["u_level"]=="admin"){ //ถ้าเป็น admin ให้ไปหน้า admin_page.php
                         echo '<script type="text/javascript">
-                        swal("Good job", "Incorrect username or password !!!", "success");
+                        swal("Good job", "The username or password is correct.", "success");
                         </script>';
-                      echo '<meta http-equiv="refresh" content="2; url=../Back End/index_admin.php" />';
+                      echo '<meta http-equiv="refresh" content="3; url=../Back End/index_admin.php" />';
                         //Header("Location: ../Back End/index_admin.php");
 
                       }
 
-                      if ($_SESSION["u_level"]=="member"){  //ถ้าเป็น member ให้กระโดดไปหน้า user_page.php
+                      if ($_SESSION["u_level"]=="member"){  //ถ้าเป็น member ให้ไปหน้า user_page.php
                         echo '<script type="text/javascript">
-                        swal("Good job", "Incorrect username or password !!!", "success");
+                        swal("Good job", "The username or password is correct.", "success");
                         </script>';
-                      echo '<meta http-equiv="refresh" content="2; url=../Front End/member_index.php" />';
+                      echo '<meta http-equiv="refresh" content="3; url=../Front End/member_index.php" />';
                         //Header("Location: ../Front End/member_index.php");
 
                       }
 
                   }else{
                         echo '<script type="text/javascript">
-                          swal("Oops...", "Incorrect username or password !!!", "error");
+                          swal("Oops...", "username or password incorrect back to login again!!!", "error");
                           </script>';
-                        echo '<meta http-equiv="refresh" content="2;url=../Login/login.php" />';
+                        echo '<meta http-equiv="refresh" content="3;url=../Login/login.php" />';
                   }
         }else{
 
