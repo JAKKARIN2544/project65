@@ -45,14 +45,20 @@ session_start();
                       $_SESSION["u_level"] = $row["u_level"];
 
                       if($_SESSION["u_level"]=="admin"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
-
-                        Header("Location: ../Back End/index_admin.php");
+                        echo '<script type="text/javascript">
+                        swal("Good job", "Incorrect username or password !!!", "success");
+                        </script>';
+                      echo '<meta http-equiv="refresh" content="2; url=../Back End/index_admin.php" />';
+                        //Header("Location: ../Back End/index_admin.php");
 
                       }
 
                       if ($_SESSION["u_level"]=="member"){  //ถ้าเป็น member ให้กระโดดไปหน้า user_page.php
-
-                        Header("Location: ../Front End/member_index.php");
+                        echo '<script type="text/javascript">
+                        swal("Good job", "Incorrect username or password !!!", "success");
+                        </script>';
+                      echo '<meta http-equiv="refresh" content="2; url=../Front End/member_index.php" />';
+                        //Header("Location: ../Front End/member_index.php");
 
                       }
 
@@ -60,7 +66,7 @@ session_start();
                         echo '<script type="text/javascript">
                           swal("Oops...", "Incorrect username or password !!!", "error");
                           </script>';
-                        echo '<meta http-equiv="refresh" content="1.5;url=../Login/login.php" />';
+                        echo '<meta http-equiv="refresh" content="2;url=../Login/login.php" />';
                   }
         }else{
 
