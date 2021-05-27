@@ -1,6 +1,3 @@
-	<!-- add sweet alert js & css in footer -->
-	<script src="src/plugins/sweetalert2/sweetalert2.all.js"></script>
-	<script src="src/plugins/sweetalert2/sweet-alert.init.js"></script>
 <?php 
 session_start();
         if(isset($_POST['u_username'])){
@@ -49,6 +46,4 @@ session_start();
              Header("Location: ../Login/login.php"); //user & password incorrect back to login again
 
         }
-
-  
 ?>
