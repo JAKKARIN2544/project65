@@ -60,23 +60,23 @@
 							<div class="form-group row align-items-center">
                                             <div class="col-sm-10">
                                                 <div class="custom-control custom-radio custom-control-inline pb-0">
-                                                    <input type="radio" id="male" name="gender" class="custom-control-input">
+                                                    <input type="radio" id="male" name="gender" class="custom-control-input" value="male">
                                                     <label class="custom-control-label" for="male"><i class="icon-copy fa fa-mars" aria-hidden="true"></i>  Male</label>
                                                 </div>
                                                 <div class="custom-control custom-radio custom-control-inline pb-0">
-                                                    <input type="radio" id="female" name="gender" class="custom-control-input">
+                                                    <input type="radio" id="female" name="gender" class="custom-control-input" value="female">
                                                     <label class="custom-control-label" for="female"><i class="icon-copy fa fa-venus" aria-hidden="true"></i> Female</label>
                                                 </div>
                                             </div>
                                         </div>
 										<div class="input-group custom">
-								<input type="password" class="form-control form-control-lg" placeholder="Phone number" name="phone_number" id="phone_number">
+								<input type="text" class="form-control form-control-lg" placeholder="Phone number" name="phone_number" id="phone_number">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="dw dw-phone-call"></i></span>
 								</div>
 							</div>
 							<div class="input-group custom">
-								<input type="password" class="form-control form-control-lg" placeholder="Address" name="address" id="address">
+								<input type="text" class="form-control form-control-lg" placeholder="Address" name="address" id="address">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="dw dw-map"></i></span>
 								</div>
