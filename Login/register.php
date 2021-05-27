@@ -99,7 +99,6 @@
 							</div>
 						</form>
 					</div>
-					<!--<img src="../vendors/images/login-page-img.png" alt=""> -->
 				</div>
 				<!-- form -->
 			</div>
