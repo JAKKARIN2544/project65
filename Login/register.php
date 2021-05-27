@@ -46,20 +46,35 @@
 								</div>
 							</div>
 							<div class="input-group custom">
-								<input type="password" class="form-control form-control-lg" placeholder="Password" name="u_password" id="u_password">
+								<input type="password" class="form-control form-control-lg" placeholder="Password" name="password" id="password">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="dw dw-padlock1"></i></span>
 								</div>
 							</div>
 							<div class="input-group custom">
-								<input type="password" class="form-control form-control-lg" placeholder="Re - Password" name="u_password" id="u_password">
+								<input type="password" class="form-control form-control-lg" placeholder="Re - Password" name="re_password" id="re_password">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="dw dw-password"></i></span>
 								</div>
 							</div>
-							<!--alet form start-->
-							<div id="u_password" class="text-danger"></div>
-							<!--alet form end -->
+							<div class="form-group row align-items-center">
+                                            <div class="col-sm-10">
+                                                <div class="custom-control custom-radio custom-control-inline pb-0">
+                                                    <input type="radio" id="male" name="gender" class="custom-control-input">
+                                                    <label class="custom-control-label" for="male"><i class="icon-copy fa fa-mars" aria-hidden="true"></i>  Male</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline pb-0">
+                                                    <input type="radio" id="female" name="gender" class="custom-control-input">
+                                                    <label class="custom-control-label" for="female"><i class="icon-copy fa fa-venus" aria-hidden="true"></i> Female</label>
+                                                </div>
+                                            </div>
+                                        </div>
+										<div class="input-group custom">
+								<input type="password" class="form-control form-control-lg" placeholder="Phone number" name="phone_number" id="phone_number">
+								<div class="input-group-append custom">
+									<span class="input-group-text"><i class="dw dw-phone-call"></i></span>
+								</div>
+							</div>
 							<div class="row pb-30">
 								<div class="col-6">
 									<div class="custom-control custom-checkbox">
@@ -74,7 +89,7 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="input-group mb-0">
-										<button class="btn btn-dark btn-lg btn-block">LOG IN</button>
+										<button class="btn btn-dark btn-lg btn-block">REGISTER</button>
 									</div>
 									<div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
 									<div class="input-group mb-0">
