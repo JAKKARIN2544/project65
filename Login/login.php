@@ -11,7 +11,7 @@
 			</div>
 			<div class="login-menu">
 				<ul>
-					<li><a href="../Login/register.php">Register</a></li>
+					<li> <i class="dw dw-add-user"> </i><a href="../Login/register.php">REGISTER</a></li>
 				</ul>
 			</div>
 		</div>
