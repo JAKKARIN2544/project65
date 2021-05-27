@@ -75,24 +75,12 @@
 									<span class="input-group-text"><i class="dw dw-phone-call"></i></span>
 								</div>
 							</div>
-							<div class="form-group row">
-								<div class="col-sm-6 col-md-5">
-								<select class="custom-select col-12">
-										<option selected="">province</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-								</select>
+							<div class="input-group custom">
+								<input type="password" class="form-control form-control-lg" placeholder="Address" name="address" id="address">
+								<div class="input-group-append custom">
+									<span class="input-group-text"><i class="dw dw-map"></i></span>
+								</div>
 							</div>
-							<div class="col-sm-6 col-md-5">
-								<select class="custom-select col-12">
-										<option selected="">Choose...</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-								</select>
-							</div>
-						</div>
 							<div class="row pb-30">
 							</div>
 							<div class="row">
