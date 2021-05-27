@@ -57,14 +57,10 @@ session_start();
                       }
 
                   }else{
-                    echo '<script type="text/javascript">
-                          <div id ="sa-error"> </div>;
+                        echo '<script type="text/javascript">
+                          swal("Oops...", "Incorrect username or password !!!", "error");
                           </script>';
-                    echo '<meta http-equiv="refresh" content="1.5;url=../Login/login.php" />';
-                    //echo '<script type="text/javascript">
-                          //swal("Oops...", "Incorrect username or password !!!", "error");
-                          //</script>';
-                    //echo '<meta http-equiv="refresh" content="1.5;url=../Login/login.php" />';
+                        echo '<meta http-equiv="refresh" content="1.5;url=../Login/login.php" />';
                   }
         }else{
 
