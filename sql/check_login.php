@@ -29,7 +29,7 @@ session_start();
                   include("../sql/conn.php");
 				//รับค่า user & password
                   $username = $_POST['u_username'];
-                  $password = $_POST['u_password'];
+                  $password = MD5($_POST["u_password"]);
 				//query 
                   $sql="SELECT * FROM user Where u_username ='".$username."' and u_password ='".$password."' ";
 
