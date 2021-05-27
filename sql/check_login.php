@@ -33,11 +33,11 @@ session_start();
                       }
 
                   }else{
-                    echo "sweetAlert('Erro!', 'Link inválido ou fora do prazo de validade.', 'error')";
-                    //echo "<script>";
-                      //echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
-                       //echo "window.history.back()";
-                    //echo "</script>";
+
+                    echo "<script>";
+                    echo "alert(\" user หรือ  password ไม่ถูกต้อง\");"; 
+                    echo "window.history.back()";
+                    echo "</script>";
                   }
 
         }else{
