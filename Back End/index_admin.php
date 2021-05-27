@@ -1,5 +1,5 @@
-<?php include "../include/header.php"; 
-	  include "../include/menu.php"; 
+<?php include "../include/header_admin.php"; 
+	  include "../include/menu_admin.php"; 
 	  
 ?> 		
 	<div class="mobile-menu-overlay"></div>
@@ -283,4 +283,4 @@
 					</a>
 				</div>
 			</div>
-<?php include "../include/footer.php"; ?> 		
+<?php include "../include/footer_admin.php"; ?> 		
