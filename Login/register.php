@@ -26,7 +26,23 @@
 						</div>
 						<form action="../sql/check_register.php" method="post"  name="loginform" onsubmit="return validateForm()">
 							<div class="input-group custom">
-								<input type="text" class="form-control form-control-lg" placeholder="Username" name="u_username" id="u_username">
+								<input type="text" class="form-control form-control-lg" placeholder="email" name="email" id="email">
+								<div class="input-group-append custom">
+									<span class="input-group-text"><i class="icon-copy dw dw-email"></i></span>
+								</div>
+							</div>
+							<div class="input-group custom">
+								<input type="text" class="form-control form-control-lg" placeholder="Username" name="username" id="username">
+								<div class="input-group-append custom">
+									<span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
+								</div>
+							</div>
+							<div class="input-group custom">
+								<input type="text" class="form-control form-control-lg" placeholder="Username" name="username" id="username">
+								<div class="input-group-append custom">
+									<span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
+								</div>
+								<input type="text" class="form-control form-control-lg" placeholder="Username" name="username" id="username">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
 								</div>
