@@ -26,18 +26,35 @@
 						</div>
 						<form action="../sql/check_login.php" method="post"  name="loginform" onsubmit="return validateForm()">
 							<div class="input-group custom">
-								<input type="text" class="form-control form-control-lg" placeholder="Username" name="u_username" id="u_username">
+								<input type="text" class="form-control form-control-lg" placeholder="Email" name="email" id="email">
 								<div class="input-group-append custom">
-									<span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
+									<span class="input-group-text"><i class="icon-copy dw dw-email"></i></span>
 								</div>
 							</div>
-							<!--alet form start-->
-							<div id="u_username" class="text-danger"></div>
-							<!--alet form end -->
 							<div class="input-group custom">
-								<input type="password" class="form-control form-control-lg" placeholder="**********" name="u_password" id="u_password">
+								<input type="text" class="form-control form-control-lg" placeholder="username" name="username" id="username">
+								<div class="input-group-append custom">
+									<span class="input-group-text"><i class="icon-copy dw dw-user"></i></span>
+								</div>
+							</div>
+							<div class="input-group custom">
+								<input type="text" class="form-control form-control-lg" placeholder="Frist name" name="fname" id="fname">
+								<div class="input-group-append custom">
+								</div>
+								<input type="text" class="form-control form-control-lg" placeholder="Last name" name="lname" id="lname">
+								<div class="input-group-append custom">	
+								</div>
+							</div>
+							<div class="input-group custom">
+								<input type="password" class="form-control form-control-lg" placeholder="Password" name="u_password" id="u_password">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="dw dw-padlock1"></i></span>
+								</div>
+							</div>
+							<div class="input-group custom">
+								<input type="password" class="form-control form-control-lg" placeholder="Re - Password" name="u_password" id="u_password">
+								<div class="input-group-append custom">
+									<span class="input-group-text"><i class="dw dw-password"></i></span>
 								</div>
 							</div>
 							<!--alet form start-->
