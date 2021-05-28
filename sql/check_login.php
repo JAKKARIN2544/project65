@@ -49,8 +49,6 @@ session_start();
                         swal("Good job", "The username or password is correct.", "success");
                         </script>';
                       echo '<meta http-equiv="refresh" content="4; url=../Back End/dashboard.php" />';
-                        //Header("Location: ../Back End/index_admin.php");
-
                       }
 
                       if ($_SESSION["u_level"]=="member"){  //ถ้าเป็น member ให้ไปหน้า user_page.php
@@ -58,8 +56,6 @@ session_start();
                         swal("Good job", "The username or password is correct.", "success");
                         </script>';
                       echo '<meta http-equiv="refresh" content="4; url=../Front End/member_index.php" />';
-                        //Header("Location: ../Front End/member_index.php");
-
                       }
 
                   }else{
