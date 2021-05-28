@@ -228,7 +228,7 @@
 					</li>
 					<li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-fish"></span><span class="mtext">Food menu</span>
+							<span class="micon dw dw-burger"></span><span class="mtext">Food menu</span>
 						</a>
 						<ul class="submenu">
 							<li><a href="ui-buttons.html">Food menu</a></li>

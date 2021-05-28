@@ -4,14 +4,14 @@
 <body class="login-page">
 	<div class="login-header box-shadow">
 		<div class="container-fluid d-flex justify-content-between align-items-center">
-			<div class="brand-logo">
+			<div class="brand-logo ">
 				<a href="../Login/login.php">
 					<img src="../vendors/images/deskapp-logo.svg" alt="">
 				</a>
 			</div>
 			<div class="login-menu">
 				<ul>
-					<li> <i class="dw dw-add-user"> </i><a class="text-success" href="../Login/register.php">REGISTER</a></li>
+					<li> <i class="dw dw-add-user"> </i><a class="text-success " href="../Login/register.php">REGISTER</a></li>
 				</ul>
 			</div>
 		</div>
@@ -21,12 +21,12 @@
 			<div class="row align-items-center">
 				<div class="col-md-8 col-lg-12">
 					<div class="login-box bg-white box-shadow border-radius-10">
-						<div class="login-title">
-							<h2 class="text-center text-success">Login To DeskApp</h2>
+						<div class="login-title ">
+							<h2 class=" text-center text-success">Login To DeskApp</h2>
 						</div>
 						<form action="../sql/check_login.php" method="post"  name="loginform" onsubmit="return validateForm()">
 							<div class="input-group custom">
-								<input type="text" class="form-control form-control-lg" placeholder="Username" name="u_username" id="u_username">
+								<input type="text" class="form-control form-control-lg " placeholder="Username" name="u_username" id="u_username">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
 								</div>
@@ -35,7 +35,7 @@
 							<div id="u_username" class="text-danger"></div>
 							<!--alet form end -->
 							<div class="input-group custom">
-								<input type="password" class="form-control form-control-lg" placeholder="**********" name="u_password" id="u_password">
+								<input type="password" class="form-control form-control-lg" placeholder="*********" name="u_password" id="u_password">
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="dw dw-padlock1"></i></span>
 								</div>

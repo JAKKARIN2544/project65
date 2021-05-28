@@ -110,7 +110,7 @@
 						<div class="d-flex flex-wrap">
 							<div class="widget-data">
 								<div class="weight-700 font-24 text-dark">$50,000</div>
-								<div class="font-14 text-secondary weight-500">Earning</div>
+								<div class="font-14 text-secondary weight-500">Total sales</div>
 							</div>
 							<div class="widget-icon">
 								<div class="icon" data-color="#09cc06"><i class="icon-copy fa fa-money" aria-hidden="true"></i></div>
@@ -141,18 +141,17 @@
 					<div class="card-box min-height-200px pd-20 mb-20" data-bgcolor="#455a64">
 						<div class="d-flex justify-content-between pb-20 text-white">
 							<div class="icon h1 text-white">
-								<i class="fa fa-calendar" aria-hidden="true"></i>
-								<!-- <i class="icon-copy fa fa-stethoscope" aria-hidden="true"></i> -->
+							<div class="font-14 text-warning">Daily sales</div>
+								<div class="font-50 weight-500">1865</div>
 							</div>
 							<div class="font-14 text-right">
 								<div><i class="icon-copy ion-arrow-up-c"></i> 2.69%</div>
-								<div class="font-12">Since last month</div>
+								<div class="font-12">BTH/Day</div>
 							</div>
 						</div>
 						<div class="d-flex justify-content-between align-items-end">
 							<div class="text-white">
-								<div class="font-14">Appointment</div>
-								<div class="font-24 weight-500">1865</div>
+								<i class="dw dw-money-1" aria-hidden="true"></i>
 							</div>
 							<div class="max-width-150">
 								<div id="appointment-chart"></div>
