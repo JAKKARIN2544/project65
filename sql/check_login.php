@@ -48,7 +48,7 @@ session_start();
                         echo '<script type="text/javascript">
                         swal("Good job", "The username or password is correct.", "success");
                         </script>';
-                      echo '<meta http-equiv="refresh" content="3; url=../Back End/dashboard.php" />';
+                      echo '<meta http-equiv="refresh" content="4; url=../Back End/dashboard.php" />';
                         //Header("Location: ../Back End/index_admin.php");
 
                       }
@@ -57,7 +57,7 @@ session_start();
                         echo '<script type="text/javascript">
                         swal("Good job", "The username or password is correct.", "success");
                         </script>';
-                      echo '<meta http-equiv="refresh" content="3; url=../Front End/member_index.php" />';
+                      echo '<meta http-equiv="refresh" content="4; url=../Front End/member_index.php" />';
                         //Header("Location: ../Front End/member_index.php");
 
                       }
@@ -66,7 +66,7 @@ session_start();
                         echo '<script type="text/javascript">
                           swal("Oops...", "username or password incorrect back to login again!!!", "error");
                           </script>';
-                        echo '<meta http-equiv="refresh" content="3;url=../Login/login.php" />';
+                        echo '<meta http-equiv="refresh" content="4;url=../Login/login.php" />';
                   }
         }else{
 
