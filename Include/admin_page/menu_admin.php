@@ -206,6 +206,16 @@
 							<li><a href="ui-cards.html">Add Personnel</a></li>
 						</ul>
 					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-chef"></span><span class="mtext">Chef</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="ui-buttons.html">Chef</a></li>
+							<li><a href="ui-buttons.html">List Chef</a></li>
+							<li><a href="ui-cards.html">Add Chef</a></li>
+						</ul>
+					</li>
 					<li>
 						<div class="dropdown-divider"></div>
 					</li>
