@@ -31,7 +31,6 @@ include "conn.php";
         $fname=$_POST['fname'];
         $lname=$_POST['lname'];
         $password = MD5($_POST["password"]);
-        //$password=$_POST['password'];
         $phone_number=$_POST['phone_number'];
         $gender=$_POST['gender'];
         $address=$_POST['address'];

@@ -48,7 +48,7 @@ session_start();
                         echo '<script type="text/javascript">
                         swal("Good job", "The username or password is correct.", "success");
                         </script>';
-                      echo '<meta http-equiv="refresh" content="3; url=../Back End/index_admin.php" />';
+                      echo '<meta http-equiv="refresh" content="3; url=../Back End/dashboard.php" />';
                         //Header("Location: ../Back End/index_admin.php");
 
                       }
