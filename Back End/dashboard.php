@@ -1,5 +1,7 @@
 <?php   include '../Include/admin_page/header_admin.php';
         include '../Include/admin_page/menu_admin.php';
+		include '../sql/conn.php';
+		include '../sql/count_sql.php';
 ?>
 
 <div class="mobile-menu-overlay"></div>
@@ -16,7 +18,7 @@
 					<div class="card-box height-100-p widget-style3">
 						<div class="d-flex flex-wrap">
 							<div class="widget-data"> 
-								<div class="weight-700 font-24 text-dark">75</div>
+								<div class="weight-700 font-24 text-dark"><?php echo $row['COUNT(u_id)'] ?></div>
 								<div class="font-14 text-secondary weight-500">Customer</div>
 							</div>
 							<div class="widget-icon">
