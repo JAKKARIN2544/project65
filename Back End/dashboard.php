@@ -8,7 +8,7 @@
 		<div class="xs-pd-20-10 pd-ltr-20">
 
 			<div class="title pb-20">
-				<h2 class="h3 mb-0" >Dashboard Overview</h2>
+				<h2 class="h3 mb-0  text-danger"><i class="icon-copy dw dw-analytics-21" data-color="#0500FF"> </i> Dashboard Overview</h2>
 			</div>
 <!-- ----------------------------------------------dashboard ---------------------------------------------------------------->
 			<div class="row pb-10">

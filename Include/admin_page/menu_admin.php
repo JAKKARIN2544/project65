@@ -198,7 +198,7 @@
 					</li>
 					<li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-user1"></span><span class="mtext">Personnel</span>
+							<span class="micon dw dw-group"></span><span class="mtext">Personnel</span>
 						</a>
 						<ul class="submenu">
 							<li><a href="ui-buttons.html">Personnel</a></li>
@@ -214,6 +214,26 @@
 							<li><a href="ui-buttons.html">Chef</a></li>
 							<li><a href="ui-buttons.html">List Chef</a></li>
 							<li><a href="ui-cards.html">Add Chef</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-fish"></span><span class="mtext">Food ingredients</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="ui-buttons.html">Food ingredients</a></li>
+							<li><a href="ui-buttons.html">List Food ingredients</a></li>
+							<li><a href="ui-cards.html">Add Food ingredients</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-fish"></span><span class="mtext">Food menu</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="ui-buttons.html">Food menu</a></li>
+							<li><a href="ui-buttons.html">List Food menu</a></li>
+							<li><a href="ui-cards.html">Add Food menu</a></li>
 						</ul>
 					</li>
 					<li>
