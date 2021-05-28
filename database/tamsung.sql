@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 28, 2021 at 01:35 AM
+-- Generation Time: May 28, 2021 at 09:18 AM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -1039,6 +1039,28 @@ INSERT INTO `amphures` (`id`, `code`, `name_th`, `name_en`, `province_id`) VALUE
 (1000, '3802', 'เซกา', 'Seka', 77),
 (999, '3801', 'เมืองบึงกาฬ', 'Mueang Bueng Kan', 77),
 (1006, '3808', 'บุ่งคล้า', 'Bung Khla', 77);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `chef`
+--
+
+CREATE TABLE `chef` (
+  `chef_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customer`
+--
+
+CREATE TABLE `customer` (
+  `cus_id` int(11) NOT NULL,
+  `cus_fname` varchar(200) NOT NULL,
+  `cus_lname` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -9920,6 +9942,26 @@ INSERT INTO `districts` (`id`, `zip_code`, `name_th`, `name_en`, `amphure_id`) V
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `food ingredients`
+--
+
+CREATE TABLE `food ingredients` (
+  `food_ing_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `food menu`
+--
+
+CREATE TABLE `food menu` (
+  `menu_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `geographies`
 --
 
@@ -10069,6 +10111,18 @@ INSERT INTO `provinces` (`id`, `code`, `name_th`, `name_en`, `geography_id`) VAL
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `table`
+--
+
+CREATE TABLE `table` (
+  `table_id` int(11) NOT NULL,
+  `table_name` varchar(100) NOT NULL,
+  `table_number_of_seats` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -10093,6 +10147,16 @@ INSERT INTO `user` (`u_id`, `u_email`, `u_username`, `u_fname`, `u_lname`, `u_pa
 (8, 'jakkarin.jaidiao2544@gmail.com', 'admin123', 'ADMIN', 'SUPER', '7488e331b8b64e5794da3fa4eb10ad5d', 'male', '0917422993', 'banbung chonburi 20170', 'admin'),
 (9, 'jakkarinbanbang007@gmail.com', 'member123', 'MEMBER', 'USER', '8073b5eac264a064ad68cbf4f8f32349', 'female', '0917422993', 'banbung chonburi 20170', 'member');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `working time`
+--
+
+CREATE TABLE `working time` (
+  `time_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 --
 -- Indexes for dumped tables
 --
@@ -10104,10 +10168,34 @@ ALTER TABLE `amphures`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `chef`
+--
+ALTER TABLE `chef`
+  ADD PRIMARY KEY (`chef_id`);
+
+--
+-- Indexes for table `customer`
+--
+ALTER TABLE `customer`
+  ADD PRIMARY KEY (`cus_id`);
+
+--
 -- Indexes for table `districts`
 --
 ALTER TABLE `districts`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `food ingredients`
+--
+ALTER TABLE `food ingredients`
+  ADD PRIMARY KEY (`food_ing_id`);
+
+--
+-- Indexes for table `food menu`
+--
+ALTER TABLE `food menu`
+  ADD PRIMARY KEY (`menu_id`);
 
 --
 -- Indexes for table `geographies`
@@ -10134,6 +10222,12 @@ ALTER TABLE `provinces`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `table`
+--
+ALTER TABLE `table`
+  ADD PRIMARY KEY (`table_id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -10148,6 +10242,30 @@ ALTER TABLE `user`
 --
 ALTER TABLE `amphures`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1007;
+
+--
+-- AUTO_INCREMENT for table `chef`
+--
+ALTER TABLE `chef`
+  MODIFY `chef_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `customer`
+--
+ALTER TABLE `customer`
+  MODIFY `cus_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `food ingredients`
+--
+ALTER TABLE `food ingredients`
+  MODIFY `food_ing_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `food menu`
+--
+ALTER TABLE `food menu`
+  MODIFY `menu_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `geographies`
@@ -10174,10 +10292,16 @@ ALTER TABLE `provinces`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
+-- AUTO_INCREMENT for table `table`
+--
+ALTER TABLE `table`
+  MODIFY `table_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
