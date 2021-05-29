@@ -1,5 +1,4 @@
-<?php include "../Include/login_page/header_login.html"; 
-?> 
+<?php include "../Include/login_page/header_login.html"; ?> 
 
 <body class="login-page">
 	<div class="login-header box-shadow">
@@ -24,7 +23,7 @@
 						<div class="login-title ">
 							<h2 class=" text-center text-success">Login To DeskApp</h2>
 						</div>
-					<form action="../sql/check_login.php" method="post"   name="myformlogin"  onsubmit="return validateform()">
+					<form action="../sql/check_login.php" method="post"   name="myformlogin"  onclick="return validateform()">
 						<div id="username" class="text-danger"></div>
 						<div id="password" class="text-danger"></div>
 							<div class="input-group custom">
@@ -53,7 +52,7 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="input-group mb-0">
-										<button class="btn btn-success btn-lg btn-block" type="submit">LOG IN</button>
+										<button class="btn btn-success btn-lg btn-block" type="submit" >LOG IN</button>
 									</div>
 									<div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
 									<div class="input-group mb-0">
@@ -71,23 +70,23 @@
 
 	<script>
 		function validateForm() {
-    var x = document.forms["myformlogin"]["username"].value;
-    var y = document.forms["myformlogin"]["password"].value;
-    if (x == "") {
-        document.getElementById("username").innerHTML = "<b> Please Your Enter username ";
+    var username = document.forms["myformlogin"]["username"].value;
+    var pasword = document.forms["myformlogin"]["password"].value;
+    if (username == "") {
+        document.getElementById('username').innerHTML = "<b> Please Your Enter username ";
         document.forms["myformlogin"]["username"].value = "";
         document.forms["myformlogin"]["username"].focus();
         return false;
     } else {
-        document.getElementById("username").innerHTML = "";
+        document.getElementById('username').innerHTML = "";
     }
-    if (y == "") {
-        document.getElementById("password").innerHTML = "<b> Please Your Enter password ";
+    if (password == "") {
+        document.getElementById('password').innerHTML = "<b> Please Your Enter password ";
         document.forms["myformlogin"]["password"].value = "";
         document.forms["myformlogin"]["password"].focus();
         return false;
     } else {
-        document.getElementById("password").innerHTML = "";
+        document.getElementById('password').innerHTML = "";
     }
 }
 	</script>
