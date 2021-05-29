@@ -1,7 +1,6 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <?php session_start();?>
 <?php 
-
 if (!$_SESSION["id"]){  //check session
 	echo '<script type="text/javascript">
           swal("Warning !!", "Please Login before you can use it.", "warning");

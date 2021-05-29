@@ -1,5 +1,5 @@
-<?php include "../include/header_admin.php"; 
-	  include "../include/menu_admin.php"; 
+<?php include "../Include/admin_page/header.php"; 
+	  include "../Include/admin_page/menu.php"; 
 ?> 
 	<div class="mobile-menu-overlay"></div>
 
@@ -79,5 +79,5 @@
 					</form>
 						<!--  Forms End -->
 	</div>								
-<?php include "../include/footer_admin.php"; ?> 	
+<?php include "../Include/admin_page/footer.php"; ?> 	
 							
