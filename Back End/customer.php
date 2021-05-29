@@ -1,5 +1,6 @@
-<?php include "../include/header.php"; 
-	  include "../include/menu.php"; 
+<?php include "../include/admin_page/header_admin.php"; 
+	  include "../include/admin_page/menu_admin.php";
+	  include '../sql/conn.php'; 
 ?> 
 
 <div class="main-container">
@@ -193,4 +194,4 @@
 					</div>
 				</div>
 				<!-- Export Datatable End -->
-<?php include "../include/footer.php"; ?> 		                
+<?php include "../include/admin_page/foote_admin.php"; ?> 		                

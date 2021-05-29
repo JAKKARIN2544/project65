@@ -191,8 +191,8 @@
 							<span class="micon dw dw-user2"></span><span class="mtext">Customer</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="ui-buttons.html">List Customer</a></li>
-							<li><a href="ui-cards.html">Add Customer</a></li>
+							<li><a href="../Back End/customer.php">List Customer</a></li>
+							<li><a href="../Back End/add_customer.php">Add Customer</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -200,8 +200,8 @@
 							<span class="micon dw dw-group"></span><span class="mtext">Personnel</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="ui-buttons.html">List Personnel</a></li>
-							<li><a href="ui-cards.html">Add Personnel</a></li>
+							<li><a href="../Back End/personnel.php">List Personnel</a></li>
+							<li><a href="../Back End/add_personnel.php">Add Personnel</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -209,8 +209,8 @@
 							<span class="micon dw dw-chef"></span><span class="mtext">Chef</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="ui-buttons.html">List Chef</a></li>
-							<li><a href="ui-cards.html">Add Chef</a></li>
+							<li><a href="../Back End/chef.php">List Chef</a></li>
+							<li><a href="../Back End/add_chef.php">Add Chef</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -218,8 +218,8 @@
 							<span class="micon dw dw-fish"></span><span class="mtext">Food ingredients</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="ui-buttons.html">List Food ingredients</a></li>
-							<li><a href="ui-cards.html">Add Food ingredients</a></li>
+							<li><a href="../Back End/food_ingredients.php">List Food ingredients</a></li>
+							<li><a href="../Back End/add_food_ingredients.php">Add Food ingredients</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -227,8 +227,8 @@
 							<span class="micon dw dw-burger"></span><span class="mtext">Food menu</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="ui-buttons.html">List Food menu</a></li>
-							<li><a href="ui-cards.html">Add Food menu</a></li>
+							<li><a href="../Back End/food_menu.php">List Food menu</a></li>
+							<li><a href="../Back End/add_food_menu.php">Add Food menu</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -236,8 +236,8 @@
 							<span class="micon dw dw-table"></span><span class="mtext">Table</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="ui-buttons.html">List Table</a></li>
-							<li><a href="ui-cards.html">Add Table</a></li>
+							<li><a href="../Back End/table.php">List Table</a></li>
+							<li><a href="../Back End/add_table.php">Add Table</a></li>
 						</ul>
 					</li>
 					<li>
@@ -246,7 +246,7 @@
 					<li>
 						<div class="sidebar-small-cap"></div>
 					</li>
-					<div class="text-">
+					<div class="">
 						<a href="" class="dropdown-toggle no-arrow ">
 						<span class="micon dw dw-wall-clock1" data-color="#FF0000"></span><h6 class=" text-danger">Working Time</h6>
 						</a>
