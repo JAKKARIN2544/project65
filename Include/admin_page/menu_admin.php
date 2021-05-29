@@ -231,6 +231,26 @@
 							<li><a href="ui-cards.html">Add Food menu</a></li>
 						</ul>
 					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-table"></span><span class="mtext">Table</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="ui-buttons.html">List Table</a></li>
+							<li><a href="ui-cards.html">Add Table</a></li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdown-divider"></div>
+					</li>
+					<li>
+						<div class="sidebar-small-cap"></div>
+					</li>
+					<div class="text-">
+						<a href="" class="dropdown-toggle no-arrow ">
+						<span class="micon dw dw-wall-clock1" data-color="#FF0000"></span><h6 class=" text-danger">Working Time</h6>
+						</a>
+					</div>
 					<li>
 						<div class="dropdown-divider"></div>
 					</li>
