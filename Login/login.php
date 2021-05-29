@@ -24,25 +24,21 @@
 						<div class="login-title ">
 							<h2 class=" text-center text-success">Login To DeskApp</h2>
 						</div>
-						<form action="../sql/check_login.php" method="post"  name="loginform" onsubmit="return validateForm()">
+					<form action="../sql/check_login.php" method="post"   name="myformlogin"  onsubmit="return validateform()">
+						<div id="username" class="text-danger"></div>
+						<div id="password" class="text-danger"></div>
 							<div class="input-group custom">
-								<input type="text" class="form-control form-control-lg " placeholder="Username" name="u_username" id="u_username">
+								<input type="text" class="form-control form-control-lg " placeholder="Username"  name="username" >
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
 								</div>
 							</div>
-							<!--alet form start-->
-							<div id="u_username" class="text-danger"></div>
-							<!--alet form end -->
 							<div class="input-group custom">
-								<input type="password" class="form-control form-control-lg" placeholder="*********" name="u_password" id="u_password">
+								<input type="password" class="form-control form-control-lg" placeholder="*********" name="password" >
 								<div class="input-group-append custom">
 									<span class="input-group-text"><i class="dw dw-padlock1"></i></span>
 								</div>
 							</div>
-							<!--alet form start-->
-							<div id="u_password" class="text-danger"></div>
-							<!--alet form end -->
 							<div class="row pb-30">
 								<div class="col-6">
 									<div class="custom-control custom-checkbox">
@@ -57,7 +53,7 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="input-group mb-0">
-										<button class="btn btn-success btn-lg btn-block">LOG IN</button>
+										<button class="btn btn-success btn-lg btn-block" type="submit">LOG IN</button>
 									</div>
 									<div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
 									<div class="input-group mb-0">
@@ -65,36 +61,34 @@
 									</div>
 								</div>
 							</div>
-						</form>
-					</div>
-					<!--<img src="../vendors/images/login-page-img.png" alt=""> -->
+					</form>
+				</div>
 				</div>
 				<!-- form -->
 			</div>
 		</div>
 	</div>
+
 	<script>
 		function validateForm() {
-    // alert ("form call js");
-    var x = document.forms["loginform"]["u_username"].value;
-    var y = document.forms["loginform"]["u_password"].value;
+    var x = document.forms["myformlogin"]["username"].value;
+    var y = document.forms["myformlogin"]["password"].value;
     if (x == "") {
-        document.getElementById("u_username").innerHTML = "<b> Please Your Enter username ";
-        document.forms["loginform"]["u_username"].value = "";
-        document.forms["loginform"]["u_username"].focus();
+        document.getElementById("username").innerHTML = "<b> Please Your Enter username ";
+        document.forms["myformlogin"]["username"].value = "";
+        document.forms["myformlogin"]["username"].focus();
         return false;
     } else {
-        document.getElementById("u_username").innerHTML = "";
+        document.getElementById("username").innerHTML = "";
     }
     if (y == "") {
-        document.getElementById("u_password").innerHTML = "<b> Please Your Enter password ";
-        document.forms["loginform"]["u_password"].value = "";
-        document.forms["loginform"]["u_password"].focus();
+        document.getElementById("password").innerHTML = "<b> Please Your Enter password ";
+        document.forms["myformlogin"]["password"].value = "";
+        document.forms["myformlogin"]["password"].focus();
         return false;
     } else {
-        document.getElementById("u_password").innerHTML = "";
+        document.getElementById("password").innerHTML = "";
     }
-
 }
 	</script>
 <?php include "../Include/login_page/footer_login.html"; ?> 

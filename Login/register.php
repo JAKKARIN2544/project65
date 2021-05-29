@@ -1,4 +1,4 @@
-<?php include "../Include/login_page/header_login.html"; 
+<?php include "../Include/login_page/header_register.html"; 
 ?> 
 
 <body class="login-page">
@@ -125,4 +125,4 @@
 
 }
 	</script>
-<?php include "../Include/login_page/footer_login.html"; ?> 
+<?php include "../Include/login_page/footer_register.html"; ?> 

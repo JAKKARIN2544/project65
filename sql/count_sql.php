@@ -1,7 +1,7 @@
 <?php
 	include '../sql/conn.php';
 
-	$sql = "SELECT COUNT(u_id) FROM user";
+	$sql = "SELECT COUNT(id) FROM user";
 	$res = mysqli_query($conn, $sql);
 	$row = mysqli_fetch_assoc($res);
 

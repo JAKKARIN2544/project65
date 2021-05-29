@@ -24,14 +24,14 @@
 <body>
 <?php 
 session_start();
-        if(isset($_POST['u_username'])){
+        if(isset($_POST['username'])){
 				//connection
                   include("../sql/conn.php");
 				//รับค่า user & password
-                  $username = $_POST['u_username'];
-                  $password = MD5($_POST["u_password"]);
+                  $username = $_POST['username'];
+                  $password = MD5($_POST["password"]);
 				//query 
-                  $sql="SELECT * FROM user Where u_username ='".$username."' and u_password ='".$password."' ";
+                  $sql="SELECT * FROM user Where username ='".$username."' and password ='".$password."' ";
 
                   $result = mysqli_query($conn,$sql);
 				
@@ -39,21 +39,21 @@ session_start();
 
                       $row = mysqli_fetch_array($result);
 
-                      $_SESSION["u_id"] = $row["u_id"];
-                      $_SESSION["u_username"] = $row["u_username"];
-                      $_SESSION["user"] = $row["u_fname"]." ".$row["u_lname"];
-                      $_SESSION["u_level"] = $row["u_level"];
+                      $_SESSION["id"] = $row["id"];
+                      $_SESSION["username"] = $row["username"];
+                      $_SESSION["user"] = $row["fname"]." ".$row["lname"];
+                      $_SESSION["level"] = $row["level"];
 
-                      if($_SESSION["u_level"]=="admin"){ //ถ้าเป็น admin ให้ไปหน้า admin_page.php
+                      if($_SESSION["level"]=="admin"){ //ถ้าเป็น admin ให้ไปหน้า admin_page.php
                         echo '<script type="text/javascript">
-                        swal("Good job", "The username or password is correct.", "success");
+                        swal("Login Success", "The username or password is correct.", "success");
                         </script>';
                       echo '<meta http-equiv="refresh" content="4; url=../Back End/dashboard.php" />';
                       }
 
-                      if ($_SESSION["u_level"]=="member"){  //ถ้าเป็น member ให้ไปหน้า user_page.php
+                      if ($_SESSION["level"]=="member"){  //ถ้าเป็น member ให้ไปหน้า user_page.php
                         echo '<script type="text/javascript">
-                        swal("Good job", "The username or password is correct.", "success");
+                        swal("Login Success", "The username or password is correct.", "success");
                         </script>';
                       echo '<meta http-equiv="refresh" content="4; url=../Front End/member_index.php" />';
                       }
@@ -65,9 +65,11 @@ session_start();
                         echo '<meta http-equiv="refresh" content="4;url=../Login/login.php" />';
                   }
         }else{
-
-
-             Header("Location: ../Login/login.php"); //user & password incorrect back to login again
+              echo '<script type="text/javascript">
+              swal("Oops...", "username or password incorrect back to login again!!!", "error");
+              </script>';
+            echo '<meta http-equiv="refresh" content="4;url=../Login/login.php" />';
+             //Header("Location: ../Login/login.php"); //user & password incorrect back to login again
 
         }
 ?>

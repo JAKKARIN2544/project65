@@ -2,7 +2,7 @@
 <?php session_start();?>
 <?php 
 
-if (!$_SESSION["u_id"]){  //check session
+if (!$_SESSION["id"]){  //check session
 	echo '<script type="text/javascript">
           swal("Warning !!", "Please Login before you can use it.", "warning");
           </script>';
