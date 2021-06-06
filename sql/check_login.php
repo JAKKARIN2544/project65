@@ -51,13 +51,20 @@ session_start();
                       echo '<meta http-equiv="refresh" content="4; url=../Back End/dashboard.php" />';
                       }
 
+                      if ($_SESSION["level"]=="personnel"){  //ถ้าเป็น member ให้ไปหน้า user_page.php
+                        echo '<script type="text/javascript">
+                        swal("Login Success", "The username or password is correct.", "success");
+                        </script>';
+                      echo '<meta http-equiv="refresh" content="4; url=../Back End/dashboard.php-" />';
+                      }
+
                       if ($_SESSION["level"]=="member"){  //ถ้าเป็น member ให้ไปหน้า user_page.php
                         echo '<script type="text/javascript">
                         swal("Login Success", "The username or password is correct.", "success");
                         </script>';
                       echo '<meta http-equiv="refresh" content="4; url=../Front End/member_index.php" />';
                       }
-
+                      
                   }else{
                         echo '<script type="text/javascript">
                           swal("Oops...", "username or password incorrect back to login again!!!", "error");

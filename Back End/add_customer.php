@@ -10,7 +10,7 @@
 				<div class="pd-20 card-box mb-30">
 					<div class="clearfix">
 						<div class="pull-left">
-							<h2 class="text-dark h2">Forms Add User</h2>
+							<h2 class="text-dark h2 ">Forms Add Customer</h2>
 							<p class="mb-30"></p>
 						</div>
 					</div>
@@ -20,6 +20,7 @@
 							<label class="col-sm-12 col-md-3 col-form-label">Name</label>
 							<div class="col-md-6 col-sm-12">
 								<input class="form-control" type="text" name="fname"  id="fname" placeholder="Your Name example 'Johnny'">
+								<div class="text-danger">65644</div>
 							</div>
 						</div>
 						<div class="form-group row"> 
