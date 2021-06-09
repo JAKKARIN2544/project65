@@ -241,9 +241,6 @@
 						</ul>
 					</li>
 					<li>
-						<div class="dropdown-divider"></div>
-					</li>
-					<li>
 						<div class="sidebar-small-cap">Report</div>
 					</li>
 					<li class="dropdown">

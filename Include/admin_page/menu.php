@@ -241,6 +241,20 @@
 						</ul>
 					</li>
 					<li>
+						<div class="sidebar-small-cap">Report</div>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon dw dw-open-book-2"></span><span class="mtext">Report</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="#">Report </a></li>
+							<li><a href="#">Report </a></li>
+							<li><a href="#">Report </a></li>
+							<li><a href="#">Report </a></li>
+						</ul>
+					</li>
+					<li>
 						<div class="dropdown-divider"></div>
 					</li>
 					<li>
