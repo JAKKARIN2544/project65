@@ -171,8 +171,8 @@
 	<div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="../Back End/dashboard.php">
-				<img src="../vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
-				<img src="../vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
+				<img src="../vendors/images/tamsung-logo.png" alt="" class="dark-logo">
+				<img src="../vendors/images/tamsung-logo.png" alt="" class="light-logo">
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>
