@@ -14,7 +14,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="../vendors/styles/core.css">
 	<link rel="stylesheet" type="text/css" href="../vendors/styles/icon-font.min.css">
@@ -33,4 +34,9 @@
 		gtag('config', 'UA-119386393-1');
 	</script>
 </head>
+<style>
+  body{
+    font-family: 'Kanit', sans-serif;
+  }
+  </style>
 <body>
