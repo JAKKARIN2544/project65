@@ -1,5 +1,5 @@
-<?php 	include '../Include/admin_page/header.php';
-		include '../Include/admin_page/menu.php';
+<?php 	include '../Include/admin_page/header_admin.php';
+		include '../Include/admin_page/menu_admin.php';
 ?>
 
 
@@ -259,4 +259,4 @@
 				</div>
 				<!-- Simple Datatable End -->
 			</div>
-<?php include '../Include/admin_page/footer.php'; ?>	
+<?php include '../Include/admin_page/footer_admin.php'; ?>	
