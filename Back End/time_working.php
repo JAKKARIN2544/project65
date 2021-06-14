@@ -2,6 +2,12 @@
 include "../Include/admin_page/menu_admin.php";
 ?>
 <style>
+    .table-list {
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+        font-family:Courier New;
+    }
     .time-date {
         color: blue;
     }
@@ -10,6 +16,7 @@ include "../Include/admin_page/menu_admin.php";
         width: 260px;
         margin: 0 auto;
         padding: 5px;
+        font-weight: bold;
     }
 
     .clock ul {
@@ -79,28 +86,36 @@ include "../Include/admin_page/menu_admin.php";
                         </div>
                     </div>
                 </div>
-                <form action="" method="post">
-                    <div class="row">
+                <form align="center" action="" method="post">
+                    <div class="row bg-dark" >
                         <div class="col-md-4 col-sm-12">
                             <div class="form-group">
-                                <label>col-md-4</label>
-                                <input type="text" class="form-control">
+                                <br><br>
+                                <label class="text-danger">Please enter your personal code</label>
+                                <input type="text" class="form-control" placeholder="enter your personal code" name="id_personnal ">
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="form-group">
-                                <label>col-md-4</label>
-                                <input type="text" class="form-control">
+                                <label class="text-light">Date</label>
+                                <input  class="form-control" disabled>
+                                <div id="Date"></div>
+                                <label class="text-light">Time</label>
+                                <input id="Date" class="form-control" disabled>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="form-group">
-                                <label>col-md-4</label>
-                                <input type="text" class="form-control">
+                                    <br><br><br>
+                                <button class="btn btn-success btn-lg" type="submit">Time In</button>
+                                <button class="btn btn-danger btn-lg" type="submit">Time Out</button>
                             </div>
                         </div>
                     </div>
                 </form>
+                <br>
+                <div class="table-list"> List Time Working</div>
+                <br>
                 <div class="pb-20">
                     <table class="data-table table stripe hover nowrap">
                         <thead>
