@@ -79,6 +79,17 @@ session_start();
              //Header("Location: ../Login/login.php"); //user & password incorrect back to login again
 
         }
+//-----------------------------------------------remember me --------------------------------------------------------------
+        if(!empty($_POST["remember"])) {
+          setcookie ("username",$_POST["username"],time()+ 3600);
+          setcookie ("password",$_POST["password"],time()+ 3600);
+          //echo "Cookies Set Successfuly";
+        } else {
+          setcookie("username","");
+          setcookie("password","");
+          //echo "Cookies Not Set";
+        }
+//-----------------------------------------------remember me --------------------------------------------------------------   
 ?>
 <!-- js -->
 <script src="../vendors/scripts/core.js"></script>
