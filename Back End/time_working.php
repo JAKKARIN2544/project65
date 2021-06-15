@@ -6,8 +6,15 @@ include "../Include/admin_page/menu_admin.php";
         font-weight: bold;
         text-align: center;
         font-size: 30px;
-        font-family:Courier New;
+        font-family: Courier New;
     }
+
+    .form-control {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
     .time-date {
         color: blue;
     }
@@ -87,26 +94,25 @@ include "../Include/admin_page/menu_admin.php";
                     </div>
                 </div>
                 <form align="center" action="" method="post">
-                    <div class="row bg-dark" >
+                    <div class="row bg-dark">
                         <div class="col-md-4 col-sm-12">
                             <div class="form-group">
-                                <br><br>
-                                <label class="text-danger">Please enter your personal code</label>
-                                <input type="text" class="form-control" placeholder="enter your personal code" name="id_personnal ">
+                                <br><br><br>
+                                <input type="text" class="form-control" placeholder="Enter your Personal code" name="id_personnal ">
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12">
+                        <div class="col-md-4 col-sm-10">
                             <div class="form-group">
                                 <label class="text-light">Date</label>
-                                <input  class="form-control" disabled>
-                                <div id="Date"></div>
+                                <input name="date" id="date" class="form-control" disabled>
+
                                 <label class="text-light">Time</label>
-                                <input id="Date" class="form-control" disabled>
+                                <input name="time" id="Time" class="form-control" disabled>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="form-group">
-                                    <br><br><br>
+                                <br><br><br>
                                 <button class="btn btn-success btn-lg" type="submit">Time In</button>
                                 <button class="btn btn-danger btn-lg" type="submit">Time Out</button>
                             </div>
@@ -114,7 +120,6 @@ include "../Include/admin_page/menu_admin.php";
                     </div>
                 </form>
                 <br>
-                <div class="table-list"> List Time Working</div>
                 <br>
                 <div class="pb-20">
                     <table class="data-table table stripe hover nowrap">
@@ -361,6 +366,67 @@ include "../Include/admin_page/menu_admin.php";
                     </table>
                 </div>
             </div>
+            <script>
+                function clockTick() {
+                    currentTime = new Date();
+                    month = currentTime.getMonth() + 1;
+                    day = currentTime.getDate();
+                    year = currentTime.getFullYear();
+                    // alert("hi");
+                    var showdate = day + "/" + month + "/" + year;
+                    document.getElementById("date").value = showdate;
+                }
+
+                setInterval(function() {
+                    clockTick();
+                }, 1000); //setInterval(clockTick, 1000); will also work
+
+                GetTime();
+
+                function GetTime() {
+                    var CurrentTime = new Date()
+                    var hour = CurrentTime.getHours()
+                    var minute = CurrentTime.getMinutes()
+                    var second = CurrentTime.getSeconds()
+
+                    if (minute < 10) {
+                        minute = "0" + minute
+                    }
+
+                    if (second < 10) {
+                        second = "0" + second
+                    }
+
+                    var GetCurrentTime = hour + ":" + minute;
+
+                    document.getElementById("Time").value = GetCurrentTime;
+                    setTimeout(GetTime, 1000)
+                }
+            </script>
+            <script>
+                // Function which returns a minimum of two digits in case the value is less than 10
+                const getTwoDigits = (value) => value < 10 ? `0${value}` : value;
+
+                const formatDate = (date) => {
+                    const year = date.getFullYear();
+                    const month = getTwoDigits(date.getMonth() + 1); // add 1 since getMonth returns 0-11 for the months
+                    const day = getTwoDigits(date.getDate());
+
+
+                    return `${day}-${month}-${year}`;
+                }
+
+                const formatTime = (date) => {
+                    const hours = getTwoDigits(date.getHours());
+                    const mins = getTwoDigits(date.getMinutes());
+
+                    return `${hours}:${mins}`;
+                }
+
+                const date = new Date();
+                document.getElementById('currentDate').value = formatDate(date);
+                document.getElementById('currentTime').value = formatTime(date);
+            </script>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
             <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
