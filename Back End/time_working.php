@@ -78,7 +78,7 @@ include "../Include/admin_page/menu_admin.php";
         <div class="min-height-200px">
             <!-- Default Basic Forms Start -->
             <div class="pd-20 card-box mb-30">
-                <h1 class="text-center text-danger">Record working time</h1>
+                <h1 class="text-center text-danger">Record working Time</h1>
                 <div>
                     <div class="clock">
                         <div id="Date"></div>
@@ -98,7 +98,7 @@ include "../Include/admin_page/menu_admin.php";
                         <div class="col-md-4 col-sm-12">
                             <div class="form-group">
                                 <br><br><br>
-                                <input type="text" class="form-control" placeholder="Enter your Personal code" name="id_personnal ">
+                                <input type="text" class="form-control" name="id_personnal" id="random">
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-10">
@@ -366,6 +366,12 @@ include "../Include/admin_page/menu_admin.php";
                     </table>
                 </div>
             </div>
+            <!-- -------------------------------start rendom id number------------------------------- -->
+            <script>
+                document.getElementById("random").value =
+                Math.floor(100000 + Math.random() * 900000);
+            </script>
+            <!-- -------------------------------end rendom id number------------------------------- -->
             <script>
                 function clockTick() {
                     currentTime = new Date();
