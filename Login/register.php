@@ -1,7 +1,7 @@
 <?php include "../Include/login_page/header_register.html"; 
 ?> 
 
-<body class="login-page">
+<body class="register-page">
 	<div class="login-header box-shadow">
 		<div class="container-fluid d-flex justify-content-between align-items-center">
 			<div class="brand-logo">

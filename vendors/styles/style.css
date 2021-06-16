@@ -2187,7 +2187,7 @@ body.IE .register-page-wrap .container {
 }
 
 .login-box {
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     padding: 40px 20px;
     margin: 5px auto
@@ -2263,9 +2263,8 @@ body.IE .register-page-wrap .container {
 }
 
 .login-box .login-img {
-    display: block;
-    margin: 0 auto 20px;
-    max-width: 100px
+    margin: 0 auto 50px;
+    max-width: 500px
 }
 
 .forgot-password {
@@ -2750,7 +2749,7 @@ body.IE .register-page-wrap .container {
 }
 
 #login-modal .login-box {
-    margin: 0
+    margin: 50
 }
 
 .confirmation-btn {
