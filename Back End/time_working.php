@@ -72,6 +72,7 @@ include "../Include/admin_page/menu_admin.php";
         }
     }
 </style>
+
 <div class="mobile-menu-overlay"></div>
 <div class="main-container">
     <div class="pd-ltr-20 xs-pd-20-10">
@@ -93,21 +94,21 @@ include "../Include/admin_page/menu_admin.php";
                         </div>
                     </div>
                 </div>
-                <form align="center" action="" method="post">
+                <form align="center" action="../sql/timeworking_in.php" method="post">
                     <div class="row bg-dark">
                         <div class="col-md-4 col-sm-12">
                             <div class="form-group">
                                 <br><br><br>
-                                <input type="text" class="form-control" name="id_personnal" id="random">
+                                <input type="text" class="form-control" name="per_id" id="random">
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-10">
                             <div class="form-group">
                                 <label class="text-light">Date</label>
-                                <input name="date" id="date" class="form-control" disabled>
+                                <input name="working_date" id="date" class="form-control" disabled>
 
                                 <label class="text-light">Time</label>
-                                <input name="time" id="Time" class="form-control" disabled>
+                                <input name="time_in" id="Time" class="form-control" disabled>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
